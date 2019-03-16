@@ -246,6 +246,10 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
 
+# Cutout control overlay
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Fix Dialer
 PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
